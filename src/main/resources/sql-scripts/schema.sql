@@ -28,11 +28,11 @@ CREATE TABLE item (
 );
 
 CREATE TABLE app_user (
-    id bigint(20) NOT NULL AUTO_INCREMENT,
-    first_name varchar(255) NOT NULL,
-    last_name varchar(255) NOT NULL,
-    password varchar(255) NOT NULL,
-    username varchar(255) NOT NULL,
+    id  varchar(255) DEFAULT NULL,
+    first_name varchar(255) DEFAULT NULL,
+    last_name varchar(255) DEFAULT NULL,
+    password varchar(255) DEFAULT NULL,
+    username varchar(255) DEFAULT NULL,
     PRIMARY KEY (id)
 );
 
