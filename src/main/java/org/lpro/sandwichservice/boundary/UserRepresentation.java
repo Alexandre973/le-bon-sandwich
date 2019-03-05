@@ -32,7 +32,6 @@ public class UserRepresentation {
     @PostMapping
     public ResponseEntity<?> createAccount(@RequestBody User user){
         user.setId(UUID.randomUUID().toString());
-        System.out.println(user.toString());
         User saved = ur.save(user);
         HttpHeaders responseHeaders = new HttpHeaders();
         responseHeaders.setLocation(linkTo(UserRepresentation.class).slash(saved.getId()).toUri());
