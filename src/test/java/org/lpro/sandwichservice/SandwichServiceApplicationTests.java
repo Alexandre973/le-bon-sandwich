@@ -5,6 +5,8 @@ import com.jayway.jsonpath.JsonPath;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.lpro.sandwichservice.boundary.UserRessource;
+import org.lpro.sandwichservice.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
@@ -20,7 +22,25 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class SandwichServiceApplicationTests {
+    @Autowired
+    private UserRessource ur;
 
+    @Autowired
+    private TestRestTemplate restTemplate;
+
+    @Before
+    public void setupContext(){
+        ur.deleteAll();
+    }
+    @Test
+    public void getAllUser(){
+        User user = new User("patrick","123","hernandez","patrick.hernandez");
+        user.setId(UUID.randomUUID().toString());
+        ur.save(user);
+        ResponseEntity<String> response = restTemplate.getForEntity("/users/",String.class);
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat(response.getBody()).contains("patrick");
+    }
 //	@Test
 //	public void contextLoads() {
 //	}
