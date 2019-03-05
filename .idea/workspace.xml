@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b44f5d5-b3c6-4641-b556-271631c63212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lpro/sandwichservice/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lpro/sandwichservice/config/ResourceServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lpro/sandwichservice/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lpro/sandwichservice/entity/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql-scripts/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql-scripts/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/lpro/sandwichservice/config/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/lpro/sandwichservice/config/ResourceServerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/le-bon-sandwich-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/le-bon-sandwich-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/le-bon-sandwich-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/le-bon-sandwich-1.0-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sql-scripts/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="621">
+              <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -125,7 +118,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1253" />
+    <option name="width" value="1054" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -227,27 +220,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="sql-scripts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="le-bon-sandwich" type="b2602c69:ProjectViewProjectNode" />
-              <item name="le-bon-sandwich" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="le-bon-sandwich" type="b2602c69:ProjectViewProjectNode" />
-              <item name="le-bon-sandwich" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="le-bon-sandwich" type="b2602c69:ProjectViewProjectNode" />
-              <item name="le-bon-sandwich" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sandwichservice" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -259,7 +231,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551795803279" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551796091588" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -303,17 +275,16 @@
       <option name="presentableId" value="Default" />
       <updated>1551688211197</updated>
       <workItem from="1551688213920" duration="557000" />
-      <workItem from="1551792539754" duration="3182000" />
+      <workItem from="1551792539754" duration="3519000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3739000" />
+    <option name="totallyTimeSpent" value="4076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1253" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30008382" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -601,8 +572,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql-scripts/schema.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="621">
+          <caret line="54" column="2" lean-forward="true" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
         </state>
       </provider>
     </entry>
