@@ -43,6 +43,7 @@ public class SandwichServiceApplicationTests {
     public void setupContext(){
         ur.deleteAll();
         cr.deleteAll();
+        comr.deleteAll();
     }
     @Test
     public void getAllUser(){
