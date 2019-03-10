@@ -24,6 +24,23 @@ public class Commande {
     @OneToMany(mappedBy = "commande", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Item> items;
 
+    public Commande( String nom, String mail, String created_at, String livraison, String updated_at, Integer montant, String status, String remise, String token, String client_id, String ref_paiement, String date_paiement, String mode_paiement, Set<Item> items) {
+        this.nom = nom;
+        this.mail = mail;
+        this.created_at = created_at;
+        this.livraison = livraison;
+        this.updated_at = updated_at;
+        this.montant = montant;
+        this.status = status;
+        this.remise = remise;
+        this.token = token;
+        this.client_id = client_id;
+        this.ref_paiement = ref_paiement;
+        this.date_paiement = date_paiement;
+        this.mode_paiement = mode_paiement;
+        this.items = items;
+    }
+
     Commande() {
         // necessaire pour JPA !
     }
