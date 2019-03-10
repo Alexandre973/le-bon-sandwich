@@ -1,3 +1,5 @@
+-- noinspection SqlNoDataSourceInspectionForFile
+
 CREATE TABLE commande (
     PRIMARY KEY (id),
     id varchar(255) DEFAULT NULL,
