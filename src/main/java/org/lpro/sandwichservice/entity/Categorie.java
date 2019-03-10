@@ -18,8 +18,7 @@ public class Categorie {
         // necessaire pour JPA !
     }
 
-    public Categorie(String id, String nom, String description, Set<Sandwich> sandwichs) {
-        this.id = id;
+    public Categorie( String nom, String description, Set<Sandwich> sandwichs) {
         this.nom = nom;
         this.description = description;
         this.sandwichs = sandwichs;

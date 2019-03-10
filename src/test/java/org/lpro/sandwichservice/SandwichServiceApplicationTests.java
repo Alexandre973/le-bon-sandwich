@@ -57,7 +57,7 @@ public class SandwichServiceApplicationTests {
 
     @Test
     public void getAllCategorie(){
-        Categorie categorie = new Categorie("1","test","un sandwitch",null);
+        Categorie categorie = new Categorie("test","une categorie",null);
         categorie.setId(UUID.randomUUID().toString());
         cr.save(categorie);
         ResponseEntity<String> response = restTemplate.getForEntity("/categories/",String.class);
@@ -67,7 +67,7 @@ public class SandwichServiceApplicationTests {
 
     @Test
     public void getAllCommande(){
-        Commande commande = new Commande ("1","commande","test@gmail.com","la","mardi","null",5,"en livraison","0","token","1","1","12/02/18","carte",null);
+        Commande commande = new Commande ("commande","test@gmail.com","la","mardi","jamais",1,"en livraison","0","token","id","0123","mardi","carte",null);
         commande.setId(UUID.randomUUID().toString());
         comr.save(commande);
         ResponseEntity<String> response = restTemplate.getForEntity("/commandes/",String.class);

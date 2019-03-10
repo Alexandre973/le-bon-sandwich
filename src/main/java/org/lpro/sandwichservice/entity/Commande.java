@@ -24,8 +24,7 @@ public class Commande {
     @OneToMany(mappedBy = "commande", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Item> items;
 
-    public Commande(String id, String nom, String mail, String created_at, String livraison, String updated_at, Integer montant, String status, String remise, String token, String client_id, String ref_paiement, String date_paiement, String mode_paiement, Set<Item> items) {
-        this.id = id;
+    public Commande( String nom, String mail, String created_at, String livraison, String updated_at, Integer montant, String status, String remise, String token, String client_id, String ref_paiement, String date_paiement, String mode_paiement, Set<Item> items) {
         this.nom = nom;
         this.mail = mail;
         this.created_at = created_at;
