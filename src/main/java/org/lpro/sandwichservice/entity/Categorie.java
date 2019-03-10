@@ -18,11 +18,13 @@ public class Categorie {
         // necessaire pour JPA !
     }
 
-    public Categorie(String nom, String description, Set<Sandwich> sandwichs) {
+    public Categorie(String id, String nom, String description, Set<Sandwich> sandwichs) {
+        this.id = id;
         this.nom = nom;
         this.description = description;
         this.sandwichs = sandwichs;
     }
+
 
     public String getId() {
         return id;
