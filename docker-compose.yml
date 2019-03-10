@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+ sandwichservice:
+  build:
+   context: .
+   dockerfile: sandwichservice.dockerfile
+  networks: 
+   - isolated_nw2
+  ports:
+   - "8082:8082"
+  volumes:
+   - /tmp
+  container_name: sandwichservice
+
+networks:
+ isolated_nw2:
+  driver: bridge
