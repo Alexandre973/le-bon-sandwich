@@ -17,6 +17,7 @@ ROBERT Alexandre
    + /commandes ... (Authentification nécessaire)
    + /categories ...
    + /sandwichs ...
+   + /users
 
 ### Authentification
 Methods : POST
