@@ -45,6 +45,7 @@ public class SandwichServiceApplicationTests {
         cr.deleteAll();
         comr.deleteAll();
     }
+
     @Test
     public void getAllUser(){
         User user = new User("patrick","123","hernandez","patrick.hernandez");
@@ -66,12 +67,17 @@ public class SandwichServiceApplicationTests {
     }
 
     @Test
-    public void getAllCommande(){
+    public void getCommandeWithNoLogin(){
         Commande commande = new Commande ("commande","test@gmail.com","10/03/2019","15/03/2019","12/03/2019",5,"en cours","","0dfg5165f51h56gfj45ghjphkdkhknsknlfknnkesgeggegege","1","1","15/03/2019","carte",null);
         commande.setId(UUID.randomUUID().toString());
         comr.save(commande);
         ResponseEntity<String> response = restTemplate.getForEntity("/commandes/",String.class);
-        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(response.getBody()).contains("commande");
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
+    }
+
+    @Test
+    public void notFoundAPI() {
+        ResponseEntity<String> response = restTemplate.getForEntity("/categories/42", String.class);
+        assertThat(response.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
     }
 }

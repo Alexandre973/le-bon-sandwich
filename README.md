@@ -5,11 +5,11 @@ LEMMER Richard\
 ROBERT Alexandre
 
 ### Installation
-  + mvn -DskipTests clean install
+  + mvn clean install
   + java -jar .\target\le-bon-sandwich-1.0-SNAPSHOT.jar
   
   OU 
-   + mvn -DskipTests clean install
+   + mvn clean install
    + docker-compose up --build
 
 ### Routes principales
