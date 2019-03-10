@@ -1,11 +1,14 @@
 # le-bon-sandwich
 
+BENIER Hugo\
+LEMMER Richard\
+ROBERT Alexandre
+
 ### Installation
   + mvn -DskipTests clean install
   + java -jar .\target\le-bon-sandwich-1.0-SNAPSHOT.jar
   
   OU 
-  
    + mvn -DskipTests clean install
    + docker-compose up --build
 
