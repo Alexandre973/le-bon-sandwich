@@ -67,7 +67,7 @@ public class SandwichServiceApplicationTests {
 
     @Test
     public void getAllCommande(){
-        Commande commande = new Commande ("1","commande","test@gmail.com","la","mardi","null",5,"en livraison","0","token","1","1","12/02/18","carte",null);
+        Commande commande = new Commande ("commande","test@gmail.com","10/03/2019","15/03/2019","12/03/2019",5,"en cours","","0dfg5165f51h56gfj45ghjphkdkhknsknlfknnkesgeggegege","1","1","15/03/2019","carte",null);
         commande.setId(UUID.randomUUID().toString());
         comr.save(commande);
         ResponseEntity<String> response = restTemplate.getForEntity("/commandes/",String.class);
