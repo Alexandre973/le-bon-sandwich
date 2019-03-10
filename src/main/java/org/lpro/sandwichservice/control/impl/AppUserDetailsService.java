@@ -1,6 +1,6 @@
 package org.lpro.sandwichservice.control.impl;
 
-import org.lpro.sandwichservice.boundary.UserRepository;
+import org.lpro.sandwichservice.boundary.UserRessource;
 import org.lpro.sandwichservice.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -16,7 +16,7 @@ import java.util.List;
 public class AppUserDetailsService implements UserDetailsService {
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRessource userRepository;
 
     @Override
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
